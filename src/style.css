@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;700&family=VT323&display=swap');
+
+/*body{
+    background-color: #460062;
+}*/
+
+*{
+  margin: 0;
+  padding: 0;   
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;    
+  border: none;
+  text-decoration: none;
+}
+
+html {
+    width: 100vw;   
+    height: 100vh;  
+    font-size: 62.5%;
+    font-family: 'Tektur', cursive;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+/* MENU */
+
+.content {
+    width: 100vw;
+    height: 70px;   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    position: fixed;
+    padding-left: 2rem;
+
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo h3{
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+.logo img{
+    width: 100px;
+    height: 70px;
+}
+
+.content .list-menu{
+    width: 600px;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .list-menu li a {
+    padding-top: 3rem;  
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #ffffff;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 250ms ease-in;
+}
+
+.content .list-menu li a:hover{
+    background-color: #9120a9;
+    border-bottom: 4px solid #460062;
+    color: #460062;
+}
+
+
+/*PRIMEIRA SEÇÃO*/
+
+.primeira-secao{
+    height: 100vh;  
+    width: 100vw;   
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8),
+        rgba(29, 29, 29, 0.8)), url(./imagens/img_fundo.avif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.primeira-secao .conteudo-principal{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.primeira-secao h1{
+    color: #ae00ff;
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-family: 'VT323', monospace;
+}
+
+.primeira-secao h2{
+    color: #d378f7;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'VT323', monospace;    
+}
+
+.btn button {
+    width: 230px;
+    height: 70px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #9120a9;
+    border-radius: 10px;
+    font-weight: 800;
+    transition: all 400ms ease-in;
+    margin-top: 6rem;
+    font-family: 'Tektur', cursive;
+}
+
+.btn button:hover {
+    border: 2px solid #9120a9;
+    background-color: transparent;
+    color: #9120a9;
+}
+
+.btn {
+display: flex;
+justify-content: space-between;
+width: 490px;
+}
+
+
+/*CARDÁPIO*/
+
+.cardapio {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     background-color: #000;
+}
+
+.cardapio h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.itens-cardapio {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+}
+
+.itens-cardapio .info {
+    background-color: #460062;
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.itens-cardapio .info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.itens-cardapio .info h4 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6rem;
+    grid-template-columns: 150px 150px;
+}
+
+.itens-cardapio .info h4 span {
+    font-size: 1.7rem;
+    color: #64dd6a;
+    margin-left: 1.5rem;
+}
+
+.itens-cardapio div {
+    background-color: #000;
+    box-shadow: 0px, 0px, 4px, 1px;
+}
+
+
+.itens-cardapio img {
+    width: 100%;
+    height: 250px;
+}
+
+.itens-cardapio .info .pedir {
+    border-radius: 5px;
+    color: #110252;
+    height: 45px;
+    width: 150px;
+    background-color: #d378f7;
+    font-size: 1.9rem;
+    font-family: 'Tektur', cursive;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    margin-top: 0.5rem;
+}
+
+.itens-cardapio .info .pedir:hover {
+    background-color: #64dd6a;
+    color: #fff;
+}
+
+
+/*SOBRE NÓS*/
+
+.sobre-nos {
+    background-color: #460062;
+    color: #ffffff;
+    font-family: 'Tektur', cursive;
+    width: 100%;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentsobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main {
+    justify-content: space-between;
+    display: flex;
+}
+
+.sobre-nos img {
+    width: 500px;
+    height: 300px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid #9120a9;
+}
+
+.contentsobre h2 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.contentsobre p {
+    font-size: 1.7rem;
+    width: 600px;
+    text-align: center;
+}
+
+
+
+/*CONTATOS*/
+
+.contatos {
+    width: 100%;
+    padding-bottom: 4.5rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #460062;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.contatos h3 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-family: 'Tektur', cursive;
+}
+
+.secao-contatos {
+    font-size: 1.5rem;
+    justify-content: space-between;
+    display: flex;
+    width: 350px;
+}
+
+.secao-contatos i {
+    margin-right: 1rem;
+}
+
+.secao-contatos div {
+    cursor: pointer;
+}
+
+.secao-contatos div:hover {
+    color: #ae00ff;
+}
+
+/*FOOTER*/
+
+footer {
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.4rem;
+    justify-content: center;
+    display: flex;  
+    align-items: center;
+}
+
+footer span{
+    margin-left: 25px;
+    justify-content: space-between;
+    display: flex;
+}
+
